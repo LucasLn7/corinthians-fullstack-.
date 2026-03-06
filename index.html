@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="styles/header.css">  
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/section.css">
+    <link rel="stylesheet" href="styles/topicos.css">
     <link rel="stylesheet" href="styles/home.css">
-
+    <link rel="stylesheet" href="styles/styleclaro.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Corinthians Landing page</title>
 </head>
 
 <body>
     
+<button id="toggleTema" onclick="alternarTema()">🌒</button>
 
 <header>
      
@@ -38,15 +40,12 @@
             Saiba mais
          </button>
 
-         <button id="mobile_btn">
-            <i class="fa-solid fa-bars"></i>
-         </button>
     </nav>
         
          <div id="mobile_menu"> 
             <ul id="mobile_nav_list">
                 <li class="nav-item">
-                    <a href="#titulos">Títulos</a>
+                    <a href="titulos">Títulos</a>
                 </li>
                 <li class="nav-item">
                     <a href="#topicos">Tópicos</a>
@@ -101,37 +100,72 @@
     </section>
 
 
-    <section id>
-        <h2>Títulos do timão </h2>
-        <div class="talvez">
-            <div class>
-                <img src="imagem/mundial.png" alt="Mundial de Clubes">
-             </div>
+<section>
+    <h2>Títulos do Timão</h2>
 
-             <div> 
-                    <img src="imagem/libertadores.png" alt="Libertadores">
-             </div>
+    <div class="talvez">
 
-             <div>
-                <img src="imagem/brasileiro.png" alt="Brasileirão">
-             </div>
+        <div class="card" data-title="Mundial de Clubes">
+            <img src="imagem/mundial.png" alt="Mundial de Clubes">
+        </div>
 
-             <div>
-                <img src="imagem/paulista.png" alt="Paulista">
-             </div>
-    </section> 
+        <div class="card" data-title="Libertadores">
+            <img src="imagem/libertadores.png" alt="Libertadores">
+        </div>
 
-    <section> 
+        <div class="card" data-title="Brasileirão">
+            <img src="imagem/brasileiro.png" alt="Brasileirão">
+        </div>
+
+        <div class="card" data-title="Paulistão">
+            <img src="imagem/paulista.png" alt="Paulista">
+        </div>
+
+        <div class="card" data-title="SuperCopa">
+            <img src="imagem/supercopa.jpg" alt="supercopa">
+        </div>
+
+
+    </div>
+</section>
+    <section>
         <h2>Tópicos</h2> 
+        <section class="topicos">
+            <div class="card">
+                <div class="img"><img src="imagem/Sem título.jpg" alt="Taça Libertadores"></div>
+                <div class="card-content h3">Nossa Torcida</div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="imagem/brasileiraotaca.jpg" alt="Taça Libertadores"></div>
+                <div class="card-content h3">Jogos</div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="imagem/logo.png" alt="Taça Libertadores"></div>
+                <div class="card-content h3">Notícias</div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="imagem/hist.jpg" alt="Taça Libertadores"></div>
+                <div class="card-content h3">Nossa História</div>
+            </div>
+             <div class="card">
+                <div class="img"><img src="imagem/paulista.png" alt="Taça Libertadores"></div>
+                <div class="card-content h3">Principais Informações</div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="imagem/time.jpg" alt="Taça Libertadores"></div>
+                <div class="card-content h3">Time</div>
+            </div>
+        </div> 
     </section>
 
     <section>
         <h2>Saiba mais</h2>
-        <div class="talvez">
+        <div class="card">
             <img src="imagem/saiba.png" alt="Saiba mais sobre o Corinthians">
         </div>
     </section>
 </main>
 <script src="javascript/script.js"></script>
+<script src="javascript/mudartema.js"></script>
 </body>
 </html>

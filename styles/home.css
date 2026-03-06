@@ -1,8 +1,7 @@
 #home{
     display: flex;
-    min-height:calc(100vh - 80px);
+    min-height:calc(100vh - 100dvh);
     position: relative;
-    
 }
 
 #cta{
@@ -15,7 +14,7 @@
 
 #cta .title {
     font-size: 4rem;
-    color:#1d1d1d;
+    color:#ffffff;
 }
 
 #cta .title span{
@@ -23,7 +22,8 @@
 }
 
 #cta .description{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-family: 'Arial', sans-serif;
 }
 
 #cta_buttons{
@@ -46,7 +46,7 @@
 
 #banner img{
   width: fit-content;
-  height: 90%;
+  height: 70%;
   border-radius: 60px;
 }
 
