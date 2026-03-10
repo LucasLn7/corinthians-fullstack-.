@@ -4,20 +4,26 @@
   margin: 0;        
   padding: 0;       
   box-sizing: border-box;
-  color:rgb(255, 241, 240);
   
 }
 
 body{
   background: #0f0f0f;
- 
+  color:rgb(255, 241, 240);
+  transition:background-color .3s ease, color .3s ease;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 section{
-  padding: 18px 8%;
+  padding: 80px 8%;
+  scroll-margin-top:80px;
 }
+
 main{
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 .btn-default{
@@ -31,18 +37,19 @@ main{
   font-weight: 600;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
   cursor:pointer;
-  transition: background-color .3s ease;
+  transition: all .3s ease;
+  text-decoration: none;
 }
 
 .btn-default:hover{
   background-color: rgb(166, 142, 187);
   box-shadow: 0px 0px 15px 4px rgba(221, 204, 236, 0.5);
+  transform: scale(1.05);
 }
 
 .social-midia-buttons{
   display: flex;
   gap: 18px;
-  cursor:pointer;
 }
 
 .social-midia-buttons a{
@@ -56,13 +63,14 @@ main{
   text-decoration: none;
   color: #1d1d1d;
   box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
-  transition:box-shadow .3s ease;
+  transition:all .3s ease;
 
 }
 
 .social-midia-buttons a:hover{
   box-shadow: 0px 0px 12px 8px rgba(221, 204, 236, 0.5);
   background-color: rgb(166, 142, 187);
+  transform: translate(-3px);
 }
 
 
@@ -77,11 +85,41 @@ main{
     font-size: 20px;
     cursor: pointer;
     background-color:rgb(103, 30, 170);
-    transition: 0.3;
+    transition:all .3s ease;
+    z-index: 999;
 }
 
 #toggleTema:hover{
-    transform: scale(1.3);
+    transform: scale(1.15);
     box-shadow: 0px 0px 12px 8px rgba(221, 204, 236, 0.5);
     background-color: rgb(166, 142, 187);
+}
+
+h2{
+
+  font-size:2.3rem;
+
+  margin-bottom:40px;
+
+  text-align:center;
+
+  position:relative;
+
+}
+
+h2::after{
+
+  content:'';
+
+  display:block;
+
+  width:90px;
+  height:4px;
+
+  background:rgb(143,34,30);
+
+  margin:15px auto 0;
+
+  border-radius:2px;
+
 }

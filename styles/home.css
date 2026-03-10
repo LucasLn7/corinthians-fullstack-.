@@ -1,11 +1,13 @@
 #home{
     display: flex;
-    min-height:calc(100vh - 100dvh);
+    min-height: 100vh;
     position: relative;
+    align-items: center;
+    gap: 40px;
 }
 
 #cta{
-    width: 35%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -15,6 +17,7 @@
 #cta .title {
     font-size: 4rem;
     color:#ffffff;
+    line-height:1.2;
 }
 
 #cta .title span{
@@ -24,6 +27,7 @@
 #cta .description{
     font-size: 1.5rem;
     font-family: 'Arial', sans-serif;
+    line-height: 1.6;
 }
 
 #cta_buttons{
@@ -40,42 +44,63 @@
   display: flex;
   align-items: center;
   justify-content: end;
-  width: 70%;
+  width: 60%;
   z-index: 2;
 }
 
 #banner img{
-  width: fit-content;
-  height: 70%;
-  border-radius: 60px;
+    width:90%;
+    max-width:900px;
+    height:auto;
+    border-radius:60px;
+    box-shadow:0 20px 30px rgba(0,0,0,0.3);
+    transition:transform .3s ease;    
+}
+#banner img:hover{
+    transform:scale(1.02);
 }
 
 .shape{
-  width: 70%;
+  width: 60%;
   height: 100%;
   position: absolute;
   border-radius: 40% 30% 0% 20%;
   top: 0;
   right: 0;
   z-index: 1;
+  opacity: 0.1;
   
 }
 
-@media screen and (max-width:1170px){ 
+@media screen and (max-width:1170px){
+
     #home{
-        min-height: 100%;
-        padding-top: 0px;
+        flex-direction:column;
+        padding-top:20px;
+        min-height:auto;
     }
 
     #banner,
     #banner img,
-    #home .shape{
-        display: none;
+    .shape{
+        display:none;
     }
 
     #cta{
-        width: 100%;
-        align-items: center;
-        text-align: center;
+        width:100%;
+        align-items:center;
+        text-align:center;
     }
+
+    #cta .title{
+        font-size:2.8rem;
+    }
+}
+
+@media screen and (max-width:450px){
+
+    #cta .title{
+        font-size:2.2rem;
+    }
+
 }

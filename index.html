@@ -9,11 +9,8 @@
     <link rel="stylesheet" href="styles/section.css">
     <link rel="stylesheet" href="styles/topicos.css">
     <link rel="stylesheet" href="styles/home.css">
-<<<<<<< HEAD
     <link rel="stylesheet" href="styles/styleclaro.css">
-=======
-    <link rel="stylesheet" href="styles/stylebodyclaro.css">
->>>>>>> 3772bd16eed92263d1b315fa139f7783416b960a
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Corinthians Landing page</title>
 </head>
@@ -26,11 +23,14 @@
      
     <nav id="navbar">
         <div class="logo">
-            <img src="logo.png" alt="Logo do Corinthians">
+            <img src="imagem/logo.png" alt="Logo do Corinthians">
         </div>
         <ul id="nav_list">
             <li class="nav-item active">
-                <a href="#titulos">Títulos</a>
+                <a href="#Inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#topicos">Títulos</a>
             </li>
             <li class="nav-item">
                 <a href="#topicos">Tópicos</a>
@@ -40,16 +40,19 @@
             </li>
          </ul>
 
-         <button class="btn-default">
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        <button class="btn-default desktop-only">
             Saiba mais
-         </button>
-
+        </button> 
     </nav>
         
+
          <div id="mobile_menu"> 
             <ul id="mobile_nav_list">
                 <li class="nav-item">
-                    <a href="titulos">Títulos</a>
+                    <a href="#titulos">Títulos</a>
                 </li>
                 <li class="nav-item">
                     <a href="#topicos">Tópicos</a>
@@ -61,6 +64,7 @@
             <button class="btn-default">
                 Saiba mais
             </button>
+            
          </div>
 </header>
 
@@ -104,7 +108,7 @@
     </section>
 
 
-<section>
+<section id="titulos">
     <h2>Títulos do Timão</h2>
 
     <div class="talvez">
@@ -144,11 +148,7 @@
                 <div class="card-content h3">Jogos</div>
             </div>
             <div class="card">
-<<<<<<< HEAD
                 <div class="img"><img src="imagem/logo.png" alt="Taça Libertadores"></div>
-=======
-                <div class="img"><img src="imagem/noticias.jpg" alt="Taça Libertadores"></div>
->>>>>>> 3772bd16eed92263d1b315fa139f7783416b960a
                 <div class="card-content h3">Notícias</div>
             </div>
             <div class="card">
@@ -156,11 +156,7 @@
                 <div class="card-content h3">Nossa História</div>
             </div>
              <div class="card">
-<<<<<<< HEAD
                 <div class="img"><img src="imagem/paulista.png" alt="Taça Libertadores"></div>
-=======
-                <div class="img"><img src="imagem/paulistaotaca.jpg" alt="Taça Libertadores"></div>
->>>>>>> 3772bd16eed92263d1b315fa139f7783416b960a
                 <div class="card-content h3">Principais Informações</div>
             </div>
             <div class="card">
@@ -177,7 +173,7 @@
         </div>
     </section>
 </main>
+</body>
 <script src="javascript/script.js"></script>
 <script src="javascript/mudartema.js"></script>
-</body>
 </html>

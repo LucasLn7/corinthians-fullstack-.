@@ -1,52 +1,105 @@
-/*Css para o modo claro, ja que algumas cores precisam ser diferentes no branco*/
-
 body.claro{
-    background: rgb(216, 212, 212);
-    color: black;
+    background:#f5f5f5;
+    color:#1a1a1a;
 }
-
-
 body.claro a{
-    color: rgb(46, 46, 114);
+    color:rgb(46,46,114);
+}
+body.claro p{
+    color:#333;
 }
 
-body.claro p{
-  color:#0f0f0f;
-}
 
 body.claro h2{
-  color:rgb(95, 15, 15);
+    color:rgb(95,15,15);
 }
 
-body a{
-    color: rgb(75, 17, 17);
+body.claro header{
+    background:#ffffff;
+    border-bottom:2px solid rgb(143,34,30);
+}
+
+body.claro .nav-item a{
+    color:#1a1a1a;
+}
+
+body.claro .nav-item a:hover{
+    color:rgb(143,34,30);
+}
+
+body.claro #mobile_btn{
+    color:#1a1a1a;
+}
+
+body.claro #mobile_menu{
+    background:#ffffff;
 }
 
 body.claro .btn-default{
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(182, 84, 84);
-  border-radius: 12px;
-  padding: 10px 14px;
-  font-weight: 600;
-  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
-  cursor:pointer;
-  transition: background-color .3s ease;
+    border:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background-color:rgb(182,84,84);
+    color:white;
+
+    border-radius:12px;
+    padding:10px 14px;
+    font-weight:600;
+
+    box-shadow:0 0 10px 2px rgba(0,0,0,0.1);
+
+    cursor:pointer;
+
+    transition:background-color .3s ease, transform .2s ease;
 }
 
-body.claro .social-midia-buttons a{ /*botôes, deixei vermelho pra combinar, roxo tava muito escuro e aleatório no modo claro, mas se quiser pode mudar*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 40px;
-  background-color:  rgb(182, 84, 84) ;
-  border-radius: 10px;
-  text-decoration: none;
-  color: #1d1d1d;
-  box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
-  transition:box-shadow .3s ease;
+body.claro .btn-default:hover{
+    background-color:rgb(150,60,60);
+    transform:scale(1.05);
+}
 
+body.claro .social-midia-buttons a{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:45px;
+    height:40px;
+
+    background-color:rgb(182,84,84);
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    color:#1d1d1d;
+
+    box-shadow:0 0 12px 4px rgba(0,0,0,0.1);
+
+    transition:box-shadow .3s ease, transform .2s ease;
+}
+
+body.claro .social-midia-buttons a:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+body.claro .card{
+    background:#ffffff;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+body.claro .card-content{
+    background:#f0f0f0;
+}
+body.claro .card-content h3{
+    color:#1a1a1a;
+}
+body.claro .saiba-card{
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+body.claro .shape{
+    opacity:0.05;
 }
