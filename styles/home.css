@@ -54,7 +54,8 @@
     height:auto;
     border-radius:60px;
     box-shadow:0 20px 30px rgba(0,0,0,0.3);
-    transition:transform .3s ease;    
+    transition:transform .3s ease;   
+    
 }
 #banner img:hover{
     transform:scale(1.02);
