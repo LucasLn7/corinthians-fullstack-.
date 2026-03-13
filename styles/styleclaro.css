@@ -101,3 +101,10 @@ body.claro .saiba-card{
 body.claro .shape{
     opacity:0.05;
 }
+body.claro #cta .title{
+    color:#010101ec;
+}
+
+body.claro footer p{
+    color:white;
+}
