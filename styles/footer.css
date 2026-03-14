@@ -1,11 +1,12 @@
 footer{
     text-align: center;
     padding: 10px 10px;
-    background: #0a0a0a;
+    background: #0f0f0f;
     color: #ccc;
     font-size: 14px;
-    border-top: 2px solid rgb(143,34,30);
+    border-top: 3px solid rgb(244,0,0);
     margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
 }
 
 footer p{
@@ -19,4 +20,80 @@ footer a{
 
 footer a:hover{
     text-decoration: underline;
+}
+
+.footer-logo{
+    margin-bottom: 8px;
+    width: 120px;
+    align-items: center;
+}
+
+.footer-frase{
+    margin-top:20px;
+    font-size:14px;
+    color:#ccc;
+    letter-spacing:1px;
+    font-style:italic;
+}
+
+
+.footer-logo:hover{
+transform:scale(1.1);
+transition:0.3s;
+}
+
+
+.footer-title{
+    margin-bottom:25px;
+    font-size:20px;
+    position:relative;
+}
+.footer-devs{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+}
+
+.dev-name{
+    font-weight:600;
+    margin-bottom:10px;
+    font-size: 16px;
+    
+}
+
+.dev-links{
+    display:flex;
+    gap:10px;
+}
+
+.dev-links a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+}
+
+.dev-links a i{
+    margin-right:4px;
+}
+
+.dev-links a:hover{
+    color:#ff2d2d;
+}
+
+.dev-links a:hover{
+transform:scale(1.1);
+transition:0.2s;
+}
+
+.divider{
+    width:1px;
+    height:40px;
+    background:#ccc;
+}
+
+.footer-copy{
+    margin-top:25px;
+    font-size:14px;
+    color:#aaa;
 }

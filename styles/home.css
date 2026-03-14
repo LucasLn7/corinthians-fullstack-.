@@ -4,6 +4,7 @@
     position: relative;
     align-items: center;
     gap: 40px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #cta{
