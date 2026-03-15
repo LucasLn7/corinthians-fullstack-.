@@ -66,13 +66,7 @@ $(document).ready(function() {
             distance: '20%',
             interval: 150
         });
-         
-        ScrollReveal().reveal('.topicos .card',{
-            origin:'bottom',
-            duration:1200,
-            distance:'20%',
-            interval:100
-        });
+    
         ScrollReveal().reveal('#saiba .saiba-card', {
             origin: 'bottom',
             duration: 1500,
