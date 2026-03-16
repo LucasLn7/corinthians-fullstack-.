@@ -11,12 +11,29 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/styleclaro.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/chatbox.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Corinthians Landing page</title>
 </head>
 
 <body>
+    <div id="chatbot-icon">💬</div>
+    <div id="chatbot-container" class="hidden">
+        <div id="chatbot-header">
+            <span>ChatBot</span>
+            <button id="close-btn">&times;</button>
+        </div>
+        <div id="chatbot-body">
+            <div id="chatbot-messages"></div>
+        </div>
+        <div id="chatbot-input-container">
+            <input type="text" 
+            id="chatbot-input"
+            placeholder="digintado a mensagem..."/>
+            <button id="send-btn">Digite</button>
+        </div>
+    </div>
     
 <button id="toggleTema" onclick="alternarTema()">🌒</button>
 
@@ -218,6 +235,7 @@
     </p>
 </footer>
 </body>
+<script src="javascript/chatbox.js"></script>
 <script src="javascript/script.js"></script>
 <script src="javascript/mudartema.js"></script>
 </html>
