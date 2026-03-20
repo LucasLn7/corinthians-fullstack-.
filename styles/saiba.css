@@ -1,0 +1,143 @@
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.conteudo {
+  display: none;
+  margin-top: 20px;
+  color: #b3b3b3;
+}
+.mensagem {
+  text-align: center;
+  margin-top: 30px;
+  color: #b3b3b3;
+  font-size: 16px;
+}
+#saiba .conteudo.ativo {
+  display: block;
+}
+#saiba:not(:has(.conteudo.ativo)) .mensagem {
+  display: block;
+}
+
+.conteudo.ativo {
+  display: block;
+}
+#saiba .title {
+  text-align: center;
+  font-size: 48px;
+  padding: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#saiba .title::after {
+  content: "";
+  width: 60px; 
+  height: 3px;
+  background: #a83a3a;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.box-social {
+  padding: 35px;
+  background: linear-gradient(145deg, rgba(121, 116, 116, 0.096), #1a1a1a);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 15px;
+  margin: 20px auto;
+  width:60vw;
+  outline: 2px solid rgb(39, 30, 30);
+}
+
+
+.tabs {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 30px;
+  background:linear-gradient(145deg, #000000, #1a1a1a);;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.tabs span {
+  color: #aaa;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tabs span:hover {
+  color: #fff;
+}
+
+.tabs .active {
+  color: #fff;
+  border-bottom: 2px solid #ac0f0fdc;
+  padding-bottom: 5px;
+}
+
+
+#social {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#social .texto {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#social .intro {
+  margin-bottom: 30px;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.grid-social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding:30px;
+  text-align: left;
+}
+
+.bloco {
+  background: #1a1a1a77;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.bloco:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
+/* TÍTULOS DOS BLOCOS */
+.bloco h3 {
+  margin-bottom: 10px;
+  color: #ac0f0fdc; 
+  font-weight: 600;
+}
+
+/* TEXTO */
+.bloco p {
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .grid-social {
+    grid-template-columns: 1fr;
+  }
+}
+
