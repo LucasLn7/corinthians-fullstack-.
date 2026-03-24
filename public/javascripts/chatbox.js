@@ -8,13 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const chatbotIcon = document.getElementById("chatbot-icon");
   const closeButton = document.getElementById("close-btn");
 
-  // abrir chat
   chatbotIcon.addEventListener("click", function () {
     chatbotContainer.classList.remove("hidden");
     chatbotIcon.style.display = "none";
   });
 
-  // fechar chat
   closeButton.addEventListener("click", function () {
     chatbotContainer.classList.add("hidden");
     chatbotIcon.style.display = "flex";
@@ -58,33 +56,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   async function getBotResponse(userMessage) {
 
-    const apiKey = "Chave_api";
-    const apiUrl = `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=${apiKey}`;    
     try {
 
-      const response = await fetch(apiUrl, {
+      const response = await fetch("/api/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({
-          contents: [
-            {
-              parts: [
-                {
-                  text: userMessage
-                }
-              ]
-            }
-          ]
-        })
+        body: JSON.stringify({ message: userMessage })
       });
 
       const data = await response.json();
 
-      const botMessage =
-        data?.candidates?.[0]?.content?.parts?.[0]?.text ||
-        "Não consegui responder.";
+      const botMessage = data.reply || "Não consegui responder.";
 
       appendMessage("bot", botMessage);
 
