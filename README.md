@@ -90,5 +90,12 @@ http://localhost:3000
 ---
 ## 👨‍💻 Desenvolvedores
 
-- **Lucas Lima** — [LinkedIn](https://www.linkedin.com/in/lucas-lima-bb0043246/) · [GitHub](https://github.com/LucasLn7)
-- **Isabella Ramos** — [LinkedIn](https://www.linkedin.com/in/isabella-frança-3047a4285/) · [GitHub](https://github.com/isafranca8)
+<p>
+  <strong>Isabella Ramos</strong> — 
+  <a href="https://www.linkedin.com/in/isabella-frança-3047a4285/">LinkedIn</a> · 
+  <a href="https://github.com/isafranca8">GitHub</a>
+  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <strong>Lucas Lima</strong> — 
+  <a href="https://www.linkedin.com/in/lucas-lima-bb0043246/">LinkedIn</a> · 
+  <a href="https://github.com/LucasLn7">GitHub</a>
+</p>
