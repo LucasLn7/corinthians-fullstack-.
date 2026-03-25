@@ -41,6 +41,37 @@ app.post("/api/chat", async (req, res) => {
   }
 });
 
+app.get("/api/jogos", async (req, res) => {
+  const apiKey = process.env.FOOTBALL_API_KEY;
+
+  if (!apiKey) {
+    return res.status(500).json({ error: "Chave da API de futebol não configurada." });
+  }
+
+  const apiUrl = "https://api.football-data.org/v4/teams/1779/matches?status=SCHEDULED&limit=5";
+  try {
+    const response = await fetch(apiUrl, {
+      headers: { "X-Auth-Token": apiKey }
+    });
+
+    const data = await response.json();
+
+    const jogos = data.matches.map(match => ({
+      competicao: match.competition.name,
+      data: match.utcDate,
+      timeCasa: match.homeTeam.name,
+      timeVisitante: match.awayTeam.name,
+      estadio: match.venue || "A definir"
+    }));
+
+    res.json({ jogos });
+
+  } catch (error) {
+    console.error("Erro ao buscar jogos:", error);
+    res.status(500).json({ error: "Erro ao buscar jogos." });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`✅ Servidor rodando em: http://localhost:${PORT}`);
 });
