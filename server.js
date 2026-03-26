@@ -60,11 +60,10 @@ app.get("/api/jogos", async (req, res) => {
       competicao: match.competition.name,
       competicaoLogo: match.competition.emblem,
       data: match.utcDate,
-      timeCasa: match.homeTeam.name,
+      timeCasa: match.homeTeam.shortName || match.homeTeam.name,
       timeCasaLogo: match.homeTeam.crest,
-      timeVisitante: match.awayTeam.name,
+      timeVisitante: match.awayTeam.shortName || match.awayTeam.name,
       timeVisitanteLogo: match.awayTeam.crest,
-      estadio: match.venue || "A definir"
 }));
 
     res.json({ jogos });
