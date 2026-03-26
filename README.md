@@ -33,43 +33,45 @@ A chave da API do Gemini **nunca fica exposta no frontend**. Toda comunicação 
 ---
 
 ## ⚙️ Como Rodar o Projeto
-
+ 
 ### Pré-requisitos
 - [Node.js](https://nodejs.org) instalado
-
+ 
 ### Passo a passo
-
+ 
 **1. Clone o repositório:**
 ```bash
 git clone https://github.com/LucasLn7/Projeto-sites-html-css-e-javascript-.
 ```
-
+ 
 **2. Entre na pasta do projeto:**
 ```bash
 cd Projeto-sites-html-css-e-javascript-.
 ```
-
+ 
 **3. Instale as dependências:**
 ```bash
 npm install
 ```
-
+ 
 **4. Crie o arquivo `.env` na raiz do projeto:**
 ```
-GEMINI_API_KEY=sua_chave_aqui
+GEMINI_API_KEY=sua_chave_gemini_aqui
+FOOTBALL_API_KEY=sua_chave_football_data_aqui
 ```
-> Obtenha sua chave gratuitamente em [aistudio.google.com](https://aistudio.google.com)
-
+> Obtenha sua chave do Gemini gratuitamente em [aistudio.google.com](https://aistudio.google.com)  
+> Obtenha sua chave do Football-Data gratuitamente em [football-data.org](https://www.football-data.org)
+ 
 **5. Inicie o servidor:**
 ```bash
 npm start
 ```
-
+ 
 **6. Acesse no navegador:**
 ```
 http://localhost:3000
 ```
-
+ 
 ---
 
 ## 📁 Estrutura do Projeto
