@@ -1,0 +1,147 @@
+#classificacao {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#classificacao h2 {
+  font-size: 2rem;
+  color: var(--text-color, #fff);
+  margin-bottom: 40px;
+}
+
+#classificacao h2 span {
+  color: #000;
+  background-color: #fff;
+  padding: 2px 10px;
+  border-radius: 6px;
+}
+
+.tabela-container {
+  max-width: 900px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.tabela-brasileirao {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  color: #fff;
+}
+
+.tabela-brasileirao thead tr {
+  background: rgba(180, 0, 0, 0.7);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.tabela-brasileirao thead th {
+  padding: 12px 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.tabela-brasileirao thead th:nth-child(2) {
+  text-align: left;
+}
+
+.tabela-brasileirao tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  transition: background 0.2s;
+}
+
+.tabela-brasileirao tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+
+.tabela-brasileirao tbody tr.corinthians {
+  background: rgba(180, 0, 0, 0.2);
+  border-left: 3px solid #c0392b;
+}
+
+.tabela-brasileirao tbody tr.corinthians:hover {
+  background: rgba(180, 0, 0, 0.3);
+}
+
+.tabela-brasileirao tbody td {
+  padding: 10px;
+  text-align: center;
+}
+
+.tabela-brasileirao tbody td:nth-child(2) {
+  text-align: left;
+}
+
+/* Posição */
+.tabela-pos {
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: 30px;
+}
+
+.zona-libertadores { border-left: 3px solid #2ecc71; }
+.zona-sulamericana { border-left: 3px solid #3498db; }
+.zona-rebaixamento { border-left: 3px solid #e74c3c; }
+
+.time-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.time-info img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.tabela-loading {
+  color: #aaa;
+  font-size: 0.95rem;
+  padding: 20px;
+}
+
+.tabela-erro {
+  color: #ff6b6b;
+  font-size: 0.95rem;
+  padding: 20px;
+}
+
+.tabela-legenda {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 16px;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+  color: #aaa;
+}
+
+.legenda-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legenda-cor {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .tabela-brasileirao {
+    font-size: 0.78rem;
+  }
+
+  .tabela-brasileirao thead th,
+  .tabela-brasileirao tbody td {
+    padding: 8px 6px;
+  }
+
+  .col-sg, .col-gols {
+    display: none;
+  }
+}

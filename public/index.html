@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/carrossel.css">
     <link rel="stylesheet" href="styles/saiba.css">
     <link rel="stylesheet" href="styles/jogos.css">
+    <link rel="stylesheet" href="styles/classificacao.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -59,7 +60,7 @@
                     <a href="#jogos">Próximos jogos</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#topicos">Tópicos</a>
+                    <a href="#classificacao">Classificação</a>
                 </li>
                 <li class="nav-item">
                     <a href="#saiba">Saiba mais</a>
@@ -203,33 +204,10 @@
             </div>
         </section>
 
-        <section id="topicos">
-            <h2>Tópicos</h2>
-            <div class="topicos">
-                <div class="card">
-                    <div class="img"><img src="imagem/Sem título.jpg" alt="Taça Libertadores"></div>
-                    <div class="card-content h3">Nossa Torcida</div>
-                </div>
-                <div class="card">
-                    <div class="img"><img src="imagem/brasileiraotaca.jpg" alt="Taça Libertadores"></div>
-                    <div class="card-content h3">Jogos</div>
-                </div>
-                <div class="card">
-                    <div class="img"><img src="imagem/logo.png" alt="Taça Libertadores"></div>
-                    <div class="card-content h3">Notícias</div>
-                </div>
-                <div class="card">
-                    <div class="img"><img src="imagem/hist.jpg" alt="Taça Libertadores"></div>
-                    <div class="card-content h3">Nossa História</div>
-                </div>
-                <div class="card">
-                    <div class="img"><img src="imagem/paulista.png" alt="Taça Libertadores"></div>
-                    <div class="card-content h3">Principais Informações</div>
-                </div>
-                <div class="card">
-                    <div class="img"><img src="imagem/time.jpg" alt="Taça Libertadores"></div>
-                    <div class="card-content h3">Time</div>
-                </div>
+         <section id="classificacao">
+            <h2>Classificação <span>Brasileirão</span></h2>
+            <div class="tabela-container" id="tabela-container">
+                <p class="tabela-loading">Carregando classificação...</p>
             </div>
         </section>
 
@@ -595,5 +573,6 @@
 <script src="javascripts/script.js"></script>
 <script src="javascripts/mudaraba.js"></script>    
 <script src="javascripts/jogos.js"></script>   
+<script src="javascripts/classificacao.js"></script>
 </body>
 </html>

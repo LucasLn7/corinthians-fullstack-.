@@ -74,6 +74,43 @@ app.get("/api/jogos", async (req, res) => {
   }
 });
 
+app.get("/api/classificacao", async (req, res) => {
+  const apiKey = process.env.FOOTBALL_API_KEY;
+
+  if (!apiKey) {
+    return res.status(500).json({ error: "Chave da API não configurada." });
+  }
+
+  const apiUrl = "https://api.football-data.org/v4/competitions/BSA/standings";
+
+  try {
+    const response = await fetch(apiUrl, {
+      headers: { "X-Auth-Token": apiKey }
+    });
+
+    const data = await response.json();
+
+    const tabela = data.standings[0].table.map(entry => ({
+      posicao: entry.position,
+      time: entry.team.shortName || entry.team.name,
+      timeLogo: entry.team.crest,
+      jogos: entry.playedGames,
+      vitorias: entry.won,
+      empates: entry.draw,
+      derrotas: entry.lost,
+      gols: `${entry.goalsFor}:${entry.goalsAgainst}`,
+      saldo: entry.goalDifference,
+      pontos: entry.points,
+    }));
+
+    res.json({ tabela });
+
+  } catch (error) {
+    console.error("Erro ao buscar classificação:", error);
+    res.status(500).json({ error: "Erro ao buscar classificação." });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`✅ Servidor rodando em: http://localhost:${PORT}`);
 });
