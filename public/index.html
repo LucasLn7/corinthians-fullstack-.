@@ -27,7 +27,7 @@
 
 <body>
     <!-- ChatBot -->
-    <div id="chatbot-icon">💬</div>  dsd
+    <div id="chatbot-icon">💬</div>
     <div id="chatbot-container" class="hidden">
         <div id="chatbot-header">
             <span>ChatBot</span>
@@ -41,39 +41,31 @@
             <button id="send-btn">Envie</button>
         </div>
     </div>
-    <!-- MUDAR TEMA -->
+
+    <!-- Mudar tema -->
     <button id="toggleTema" onclick="alternarTema()">🌒</button>
 
     <header>
-        <!-- MENU RESPONSIVO -->
-
         <nav id="navbar">
             <div class="logo">
                 <img src="imagem/logo.png" alt="Logo do Corinthians">
             </div>
             <ul id="nav_list"></ul>
-
             <button id="mobile_btn">
                 <i class="fa-solid fa-bars"></i>
             </button>
-
-            <button class="btn-default desktop-only">
-                Saiba mais
-            </button>
+            <button class="btn-default desktop-only">Saiba mais</button>
         </nav>
 
         <div id="mobile_menu">
             <ul id="mobile_nav_list"></ul>
-            <button class="btn-default">
-                Saiba mais
-            </button>
-
+            <button class="btn-default">Saiba mais</button>
         </div>
     </header>
 
-
-    <!-- PARTE DO INICIO -->
     <main id="content">
+
+        <!-- Início -->
         <section id="home">
             <div class="shape"></div>
             <div id="cta">
@@ -88,14 +80,11 @@
                     conquistas significativas e rivalidades intensas, especialmente com o Palmeiras, outro grande clube
                     paulista.
                 </p>
-
                 <div id="cta_buttons">
-                    <a href="https://www.shoptimao.com.br" target="_blank" class="btn-default"
-                        rel="noopener noreferrer">
+                    <a href="https://www.shoptimao.com.br" target="_blank" class="btn-default" rel="noopener noreferrer">
                         Vai Corinthians
                     </a>
                 </div>
-
                 <div class="social-midia-buttons">
                     <a href="https://www.facebook.com/corinthians/?locale=pt_BR" target="_blank">
                         <i class="fab fa-facebook-f"></i>
@@ -107,81 +96,48 @@
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>
-
             </div>
-
             <div id="banner">
                 <img src="imagem/yuri.png" alt="Yuri gol">
             </div>
-
         </section>
 
-        <!-- CARROSSEL DE IMAGEM -->
+        <!-- Títulos -->
         <section id="titulos">
             <h2>Títulos do Timão</h2>
             <div class="carrossel">
                 <div class="carrossel-track">
-                    <div class="card" data-title="Mundial de Clubes">
-                        <img src="imagem/mundial.png" alt="img">
-                    </div>
-                    <div class="card" data-title="Libertadores">
-                        <img src="imagem/libertadores.png" alt="img">
-                    </div>
-
-                    <div class="card" data-title="Brasileirão">
-                        <img src="imagem/brasileiro.png" alt="img">
-                    </div>
-                    <div class="card" data-title="Paulistão">
-                        <img src="imagem/paulista.png" alt="img">
-                    </div>
-                    <div class="card" data-title="SuperCopa">
-                        <img src="imagem/supercopa.png" alt="img">
-                    </div>
-
-                    <div class="card" data-title="Mundial de Clubes">
-                        <img src="imagem/mundial.png" alt="img">
-                    </div>
-
-                    <div class="card" data-title="Libertadores">
-                        <img src="imagem/libertadores.png" alt="img">
-                    </div>
-
-                    <div class="card" data-title="Brasileirão">
-                        <img src="imagem/brasileiro.png" alt="img">
-                    </div>
-
-                    <div class="card" data-title="Paulistão">
-
-                        <img src="imagem/paulista.png" alt="img">
-
-                    </div>
-
-                    <div class="card" data-title="SuperCopa">
-
-                        <img src="imagem/supercopa.png" alt="img">
-
-                    </div>
-
+                    <div class="card" data-title="Mundial de Clubes"><img src="imagem/mundial.png" alt="img"></div>
+                    <div class="card" data-title="Libertadores"><img src="imagem/libertadores.png" alt="img"></div>
+                    <div class="card" data-title="Brasileirão"><img src="imagem/brasileiro.png" alt="img"></div>
+                    <div class="card" data-title="Paulistão"><img src="imagem/paulista.png" alt="img"></div>
+                    <div class="card" data-title="SuperCopa"><img src="imagem/supercopa.png" alt="img"></div>
+                    <div class="card" data-title="Mundial de Clubes"><img src="imagem/mundial.png" alt="img"></div>
+                    <div class="card" data-title="Libertadores"><img src="imagem/libertadores.png" alt="img"></div>
+                    <div class="card" data-title="Brasileirão"><img src="imagem/brasileiro.png" alt="img"></div>
+                    <div class="card" data-title="Paulistão"><img src="imagem/paulista.png" alt="img"></div>
+                    <div class="card" data-title="SuperCopa"><img src="imagem/supercopa.png" alt="img"></div>
                 </div>
             </div>
         </section>
-        <!-- Seção de proximos jogos -->
-        <section id="jogos"> 
+
+        <!-- Próximos Jogos -->
+        <section id="jogos">
             <h2>Próximos <span>Jogos</span></h2>
             <div class="jogos-container" id="jogos-container">
                 <p class="jogos-loading">Carregando jogos...</p>
             </div>
         </section>
 
-        <!-- Seção de classificação -->
+        <!-- Classificação -->
         <section id="classificacao">
             <h2>Classificação <span>Brasileirão</span></h2>
             <div class="tabela-container" id="tabela-container">
                 <p class="tabela-loading">Carregando classificação...</p>
             </div>
         </section>
-        
-        <!-- Seção de "Saiba Mais" -->
+
+        <!-- Saiba Mais -->
         <section class="container" id="saiba">
             <div>
                 <h1 class="title">Saiba Mais</h1>
@@ -198,300 +154,134 @@
                     como um time que vai além das fronteiras do esporte e impacta diversos aspectos sociais.
                 </p>
             </div>
-                <div class="conteudo" id="social">
-                    <div class="box-social">
-                        <div class="title">O Lado Social do Timão</div>
 
-                        <p class="intro">
-                            O Corinthians não é chamado de "Time do Povo" apenas pela sua origem, mas pela forma como
-                            transforma sua influência em impacto social real.
-                            O clube mantém um ecossistema de projetos que vai muito além das quatro linhas, focando no
-                            desenvolvimento humano e ambiental,
-                            principalmente na Zona Leste de São Paulo.
-                        </p>
-
-                        <div class="grid-social">
-
-                            <div class="bloco">
-                                <h3>Saúde e Solidariedade</h3>
-                                <p>
-                                    O clube transforma a paixão da torcida em vida através da campanha <strong>Sangue
-                                        Corinthiano</strong>,
-                                    que há mais de 15 anos mobiliza milhares de torcedores para abastecer hemocentros.
-                                </p>
-                                <p>
-                                    Além disso, ações como o <strong>Outubro Rosa</strong> já proporcionaram exames,
-                                    orientação e acolhimento
-                                    para quase 7 mil mulheres, reforçando o compromisso com a prevenção e o cuidado com
-                                    a saúde.
-                                </p>
-                            </div>
-
-                            <div class="bloco">
-                                <h3>Aliança com as Favelas</h3>
-                                <p>
-                                    Em parceria com organizações como <strong>CUFA (Mães da Favela)</strong> e
-                                    <strong>Gerando Falcões</strong>,
-                                    o Corinthians atua diretamente no combate à fome e à desigualdade social.
-                                </p>
-                                <p>
-                                    Projetos como o <strong>ASMARA</strong> promovem o empoderamento feminino e a
-                                    geração de renda,
-                                    com a meta de impactar mais de 15 mil mulheres em comunidades vulneráveis.
-                                </p>
-                            </div>
-
-                            <div class="bloco">
-                                <h3>Compromisso Ambiental (ESG)</h3>
-                                <p>
-                                    A Neo Química Arena vai além do futebol e se posiciona como um centro de
-                                    responsabilidade ambiental em Itaquera.
-                                </p>
-                                <p>
-                                    O clube investe em ações sustentáveis como plantio de árvores, gestão de resíduos,
-                                    uso consciente de recursos
-                                    e programas de educação ecológica para a comunidade.
-                                </p>
-                            </div>
-
-                            <div class="bloco">
-                                <h3>Cultura e Identidade</h3>
-                                <p>
-                                    O sentimento de "ser corinthiano" começa desde o nascimento com o projeto
-                                    <strong>Nasci Fiel</strong>,
-                                    que entrega kits para recém-nascidos, fortalecendo o vínculo com o clube desde cedo.
-                                </p>
-                                <p>
-                                    O Departamento Cultural, junto ao Memorial e ao Teatro Corinthians, promove inclusão
-                                    através da arte,
-                                    educação e preservação da história do clube.
-                                </p>
-                            </div>
-
-                            <div class="bloco">
-                                <h3>Educação e Inclusão</h3>
-                                <p>
-                                    O Corinthians também investe em iniciativas educacionais, oferecendo atividades
-                                    esportivas, culturais e
-                                    formativas para crianças e jovens da periferia.
-                                </p>
-                                <p>
-                                    Esses projetos ajudam no desenvolvimento pessoal, afastam jovens de situações de
-                                    risco e criam oportunidades
-                                    para um futuro melhor.
-                                </p>
-                            </div>
-
-                            <div class="bloco">
-                                <h3>Impacto na Comunidade</h3>
-                                <p>
-                                    A presença do Corinthians na Zona Leste representa mais do que futebol: é
-                                    transformação social.
-                                </p>
-                                <p>
-                                    O clube gera empregos, movimenta a economia local e fortalece o sentimento de
-                                    pertencimento da comunidade,
-                                    sendo um verdadeiro símbolo de resistência e união.
-                                </p>
-                            </div>
-
+            <div class="conteudo" id="social">
+                <div class="box-social">
+                    <div class="title">O Lado Social do Timão</div>
+                    <p class="intro">
+                        O Corinthians não é chamado de "Time do Povo" apenas pela sua origem, mas pela forma como
+                        transforma sua influência em impacto social real. O clube mantém um ecossistema de projetos
+                        que vai muito além das quatro linhas, focando no desenvolvimento humano e ambiental,
+                        principalmente na Zona Leste de São Paulo.
+                    </p>
+                    <div class="grid-social">
+                        <div class="bloco">
+                            <h3>Saúde e Solidariedade</h3>
+                            <p>O clube transforma a paixão da torcida em vida através da campanha <strong>Sangue Corinthiano</strong>, que há mais de 15 anos mobiliza milhares de torcedores para abastecer hemocentros.</p>
+                            <p>Além disso, ações como o <strong>Outubro Rosa</strong> já proporcionaram exames, orientação e acolhimento para quase 7 mil mulheres.</p>
+                        </div>
+                        <div class="bloco">
+                            <h3>Aliança com as Favelas</h3>
+                            <p>Em parceria com organizações como <strong>CUFA (Mães da Favela)</strong> e <strong>Gerando Falcões</strong>, o Corinthians atua diretamente no combate à fome e à desigualdade social.</p>
+                            <p>Projetos como o <strong>ASMARA</strong> promovem o empoderamento feminino e a geração de renda, com a meta de impactar mais de 15 mil mulheres em comunidades vulneráveis.</p>
+                        </div>
+                        <div class="bloco">
+                            <h3>Compromisso Ambiental (ESG)</h3>
+                            <p>A Neo Química Arena vai além do futebol e se posiciona como um centro de responsabilidade ambiental em Itaquera.</p>
+                            <p>O clube investe em ações sustentáveis como plantio de árvores, gestão de resíduos, uso consciente de recursos e programas de educação ecológica para a comunidade.</p>
+                        </div>
+                        <div class="bloco">
+                            <h3>Cultura e Identidade</h3>
+                            <p>O sentimento de "ser corinthiano" começa desde o nascimento com o projeto <strong>Nasci Fiel</strong>, que entrega kits para recém-nascidos, fortalecendo o vínculo com o clube desde cedo.</p>
+                            <p>O Departamento Cultural, junto ao Memorial e ao Teatro Corinthians, promove inclusão através da arte, educação e preservação da história do clube.</p>
+                        </div>
+                        <div class="bloco">
+                            <h3>Educação e Inclusão</h3>
+                            <p>O Corinthians também investe em iniciativas educacionais, oferecendo atividades esportivas, culturais e formativas para crianças e jovens da periferia.</p>
+                            <p>Esses projetos ajudam no desenvolvimento pessoal, afastam jovens de situações de risco e criam oportunidades para um futuro melhor.</p>
+                        </div>
+                        <div class="bloco">
+                            <h3>Impacto na Comunidade</h3>
+                            <p>A presença do Corinthians na Zona Leste representa mais do que futebol: é transformação social.</p>
+                            <p>O clube gera empregos, movimenta a economia local e fortalece o sentimento de pertencimento da comunidade, sendo um verdadeiro símbolo de resistência e união.</p>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="conteudo" id="esportes">
                 <div class="box-social">
-                    <div class="title">O corinthians e o mundo esportivo</div>
-
+                    <div class="title">O Corinthians e o mundo esportivo</div>
                     <p class="intro">
                         Ao longo de sua história, o clube se consolidou como uma instituição poliesportiva, participando
                         de diversas modalidades e contribuindo tanto para o esporte de alto rendimento quanto para a
-                        formação de atletas e inclusão social. Essa diversidade esportiva reforça sua identidade como
-                        “Time do Povo”, presente em diferentes áreas do esporte brasileiro.
+                        formação de atletas e inclusão social.
                     </p>
-
                     <div class="grid-social">
-
                         <div class="bloco">
                             <h3>Futebol (Masculino e Feminino)</h3>
-                            <p>
-                                No futebol masculino, o Corinthians possui uma das trajetórias mais vitoriosas do país,
-                                com destaque para conquistas internacionais como a <strong>Copa Libertadores da América
-                                    e o Mundial de Clubes da FIFA.</strong>,
-                                Essas vitórias projetaram o clube mundialmente, consolidando sua grandeza.
-                            </p>
-                            <p>
-                                Já no futebol feminino, o Corinthians se tornou referência nacional e internacional. A
-                                equipe domina o<strong>Campeonato Brasileiro de Futebol Feminino</strong> e acumula
-                                títulos importantes, além de revelar grandes atletas.
-                                O investimento nessa modalidade demonstra o compromisso do clube com a igualdade no
-                                esporte.
-                            </p>
+                            <p>No futebol masculino, o Corinthians possui uma das trajetórias mais vitoriosas do país, com destaque para conquistas internacionais como a <strong>Copa Libertadores da América e o Mundial de Clubes da FIFA</strong>.</p>
+                            <p>Já no futebol feminino, o Corinthians se tornou referência nacional e internacional, dominando o <strong>Campeonato Brasileiro de Futebol Feminino</strong>.</p>
                         </div>
-
                         <div class="bloco">
                             <h3>Basquete</h3>
-                            <p>
-                                O basquete do Corinthians participa do <strong>Novo Basquete Brasil
-                                    (NBB),</strong>principal competição da modalidade no país.
-                                A equipe representa o clube em nível nacional, enfrentando grandes adversários e
-                                contribuindo para a visibilidade do basquete brasileiro.
-                            </p>
-                            <p>
-                                Além disso, o clube investe em categorias de base, incentivando jovens atletas e
-                                ampliando o acesso ao esporte, o que reforça seu papel formador.
-                            </p>
+                            <p>O basquete do Corinthians participa do <strong>Novo Basquete Brasil (NBB)</strong>, principal competição da modalidade no país.</p>
+                            <p>Além disso, o clube investe em categorias de base, incentivando jovens atletas e ampliando o acesso ao esporte.</p>
                         </div>
-
                         <div class="bloco">
                             <h3>Vôlei</h3>
-                            <p>
-                                O Corinthians possui tradição histórica no vôlei, tendo participado de importantes
-                                competições nacionais ao longo das décadas. Embora atualmente não tenha o mesmo destaque
-                                de outras modalidades, o voleibol faz parte da identidade esportiva do clube.
-                            </p>
-                            <p>
-                                Essa trajetória demonstra como o Corinthians sempre buscou diversificar sua atuação
-                                esportiva, mesmo enfrentando desafios financeiros e estruturais ao longo do tempo.
-                            </p>
+                            <p>O Corinthians possui tradição histórica no vôlei, tendo participado de importantes competições nacionais ao longo das décadas.</p>
+                            <p>Essa trajetória demonstra como o Corinthians sempre buscou diversificar sua atuação esportiva.</p>
                         </div>
-
                         <div class="bloco">
                             <h3>Natação e Esportes Aquáticos</h3>
-                            <p>
-                                Na natação, o clube atua principalmente na formação de atletas e participação em
-                                campeonatos regionais e nacionais. Essa modalidade é fundamental para o desenvolvimento
-                                esportivo desde a base, permitindo que jovens tenham acesso a treinamento e competições.
-                            </p>
-                            <p>
-                                Além do aspecto competitivo, a natação também cumpre um papel social importante,
-                                promovendo saúde, disciplina e inclusão.
-                            </p>
+                            <p>Na natação, o clube atua principalmente na formação de atletas e participação em campeonatos regionais e nacionais.</p>
+                            <p>Além do aspecto competitivo, a natação também cumpre um papel social importante, promovendo saúde, disciplina e inclusão.</p>
                         </div>
-
                         <div class="bloco">
                             <h3>Artes Marciais</h3>
-                            <p>
-                                Modalidades como judô, jiu-jitsu e karatê também fazem parte do Corinthians. Esses
-                                esportes individuais são importantes para a formação de valores como respeito,
-                                disciplina e autocontrole.
-                            </p>
-                            <p>
-                                O clube participa de competições e incentiva a prática dessas modalidades, ampliando
-                                ainda mais sua presença no cenário esportivo e oferecendo oportunidades para diferentes
-                                perfis de atletas.
-                            </p>
+                            <p>Modalidades como judô, jiu-jitsu e karatê também fazem parte do Corinthians, formando valores como respeito, disciplina e autocontrole.</p>
+                            <p>O clube participa de competições e incentiva a prática dessas modalidades.</p>
                         </div>
-
                         <div class="bloco">
                             <h3>Impacto</h3>
-                            <p>
-                                Dessa forma, o Corinthians se destaca não apenas como um gigante do futebol, mas como um
-                                clube que valoriza o esporte em sua diversidade.
-                            </p>
-                            <p>
-                                Sua atuação em diferentes modalidades mostra um compromisso com o desenvolvimento
-                                esportivo, social e cultural, consolidando sua importância no Brasil.
-                            </p>
+                            <p>O Corinthians se destaca não apenas como um gigante do futebol, mas como um clube que valoriza o esporte em sua diversidade.</p>
+                            <p>Sua atuação em diferentes modalidades mostra um compromisso com o desenvolvimento esportivo, social e cultural.</p>
                         </div>
-
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
-
 
             <div class="conteudo" id="cultural">
                 <div class="box-social">
-                    <div class="title">Inflência Cultural</div>
-
+                    <div class="title">Influência Cultural</div>
                     <p class="intro">
                         O Sport Club Corinthians Paulista desempenha um papel relevante na valorização da cultura e da
                         memória, consolidando-se como uma instituição que vai além do futebol.
                     </p>
-
                     <div class="grid-social">
-
                         <div class="bloco">
                             <h3>Arte, Música e Cultura</h3>
-
-                            <p>
-                                O Corinthians se destaca como um espaço ativo de produção cultural, promovendo
-                                manifestações artísticas como teatro, exposições e concertos musicais.
-                            </p>
-
-                            <p>
-                                Projetos como <strong>“Música na Capela”</strong> ampliam o acesso à música e aproximam
-                                a comunidade de experiências culturais dentro do clube.
-                            </p>
-
-                            <p>
-                                Além disso, iniciativas como sessões de cinema, eventos comemorativos e o projeto
-                                <strong>“Jogos Eternos”</strong> fortalecem o entretenimento e permitem que torcedores
-                                revivam momentos marcantes da história do time.
-                            </p>
-
-                            <p>
-                                O investimento no teatro e em espaços culturais também incentiva a produção artística e
-                                democratiza o acesso à arte.
-                            </p>
+                            <p>O Corinthians se destaca como um espaço ativo de produção cultural, promovendo manifestações artísticas como teatro, exposições e concertos musicais.</p>
+                            <p>Projetos como <strong>"Música na Capela"</strong> ampliam o acesso à música e aproximam a comunidade de experiências culturais dentro do clube.</p>
+                            <p>Além disso, iniciativas como sessões de cinema e o projeto <strong>"Jogos Eternos"</strong> fortalecem o entretenimento e permitem que torcedores revivam momentos marcantes.</p>
+                            <p>O investimento no teatro e em espaços culturais também incentiva a produção artística e democratiza o acesso à arte.</p>
                         </div>
-
                         <div class="bloco">
                             <h3>História, Identidade e Impacto Social</h3>
-
-                            <p>
-                                Desde sua fundação, em 1910, o Corinthians se consolidou como um símbolo da classe
-                                trabalhadora, representando identidade e pertencimento popular.
-                            </p>
-
-                            <p>
-                                Essa trajetória é preservada em espaços como o <strong>Memorial Corinthians</strong>,
-                                que reúne troféus, documentos e momentos marcantes da história do clube.
-                            </p>
-
-                            <p>
-                                Um dos maiores exemplos de seu impacto foi a <strong>Democracia Corinthiana</strong>, na
-                                década de 1980, quando jogadores e dirigentes adotaram práticas democráticas em meio à
-                                ditadura militar.
-                            </p>
-
-                            <p>
-                                Esse movimento ultrapassou o esporte e se tornou símbolo de luta por liberdade,
-                                mostrando que o Corinthians influencia não apenas o futebol, mas também a sociedade e a
-                                cultura brasileira.
-                            </p>
-
+                            <p>Desde sua fundação, em 1910, o Corinthians se consolidou como um símbolo da classe trabalhadora, representando identidade e pertencimento popular.</p>
+                            <p>Essa trajetória é preservada em espaços como o <strong>Memorial Corinthians</strong>, que reúne troféus, documentos e momentos marcantes da história do clube.</p>
+                            <p>Um dos maiores exemplos de seu impacto foi a <strong>Democracia Corinthiana</strong>, na década de 1980, quando jogadores e dirigentes adotaram práticas democráticas em meio à ditadura militar.</p>
+                            <p>Esse movimento ultrapassou o esporte e se tornou símbolo de luta por liberdade.</p>
                         </div>
-
                     </div>
-
                 </div>
             </div>
-            </div>
-            </div>
-            </div>
 
-            </div>
             <div class="conteudo" id="visitas">
                 <div class="box-social">
                     <div class="title">Visitas ao Corinthians</div>
-                    <p class="intro">
-                        Conheça as opções de visitas ao estádio e ao museu do Corinthians.
-                    </p>
+                    <p class="intro">Conheça as opções de visitas ao estádio e ao museu do Corinthians.</p>
                     <div class="grid-social">
                         <div class="bloco">
                             <h3>Visita à Neo Química Arena</h3>
-                            <p>Conheça o estádio do Corinthians em Itaquera, com visita guiada aos vestiários, gramado e
-                                áreas exclusivas.</p>
+                            <p>Conheça o estádio do Corinthians em Itaquera, com visita guiada aos vestiários, gramado e áreas exclusivas.</p>
                             <p>Horários: Terça a Domingo, das 9h às 17h</p>
                             <p>Valores: R$ 60,00 (inteira) / R$ 30,00 (meia)</p>
                         </div>
                         <div class="bloco">
                             <h3>Memorial Corinthians</h3>
-                            <p>Explore a história do clube com exposição de troféus, documentos e momentos históricos.
-                            </p>
+                            <p>Explore a história do clube com exposição de troféus, documentos e momentos históricos.</p>
                             <p>Local: Estádio Neo Química Arena</p>
                             <p>Agendamento: Site oficial do Corinthians</p>
                         </div>
@@ -499,18 +289,16 @@
                 </div>
             </div>
         </section>
-        
-        <!-- Fim da página -->
+
+        <!-- Footer -->
         <footer class="footer">
             <a href="#home">
                 <img src="imagem/logo.png" class="footer-logo" alt="logo">
             </a>
             <h3 class="footer-title">Desenvolvedores</h3>
-
             <div class="footer-devs">
                 <div class="dev">
                     <p class="dev-name">Lucas Lima</p>
-
                     <div class="dev-links">
                         <a href="https://www.linkedin.com/in/lucas-lima-bb0043246/" target="_blank">
                             <i class="fa-brands fa-linkedin"></i> Linkedin
@@ -520,12 +308,9 @@
                         </a>
                     </div>
                 </div>
-
                 <div class="divider"></div>
-
                 <div class="dev">
                     <p class="dev-name">Isabella Ramos</p>
-
                     <div class="dev-links">
                         <a href="https://www.linkedin.com/in/isabella-frança-3047a4285/" target="_blank">
                             <i class="fa-brands fa-linkedin"></i> Linkedin
@@ -537,16 +322,17 @@
                 </div>
             </div>
             <p class="footer-frase">-A torcida que tem um time-</p>
-            <p class="footer-copy">
-                © 2026 - Corinthians Landing Page
-            </p>
+            <p class="footer-copy">© 2026 - Corinthians Landing Page</p>
         </footer>
-<script src="javascripts/chatbox.js"></script>
-<script src="javascripts/mudartema.js"></script>
-<script src="javascripts/script.js"></script>
-<script src="javascripts/mudaraba.js"></script>    
-<script src="javascripts/jogos.js"></script>   
-<script src="javascripts/classificacao.js"></script>
-<script src="javascripts/menu.js"></script>
+
+    </main>
+
+    <script src="javascripts/menu.js"></script>
+    <script src="javascripts/chatbox.js"></script>
+    <script src="javascripts/mudartema.js"></script>
+    <script src="javascripts/script.js"></script>
+    <script src="javascripts/mudaraba.js"></script>
+    <script src="javascripts/jogos.js"></script>
+    <script src="javascripts/classificacao.js"></script>
 </body>
 </html>
