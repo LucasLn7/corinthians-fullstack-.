@@ -1,3 +1,4 @@
+// jogos.js - Responsável por buscar e exibir os jogos agendados, formatando as datas e horários para o fuso horário de São Paulo (GMT-3) e garantindo que a interface seja responsiva e amigável.
 document.addEventListener("DOMContentLoaded", async function () {
 
   const container = document.getElementById("jogos-container");

@@ -1,3 +1,4 @@
+// analise.js - Responsável por buscar e exibir os dados de análise do time, formatando os dados e garantindo que a interface seja responsiva e amigável.
 document.addEventListener("DOMContentLoaded", async function () {
   try {
     const response = await fetch("/api/analise");

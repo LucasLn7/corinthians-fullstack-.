@@ -1,3 +1,4 @@
+// server.js - Servidor Express para lidar com as rotas de API, incluindo integração com a API Gemini para o chatbot e a API de futebol para jogos, classificação e análise.
 const express = require("express");
 const fetch = require("node-fetch");
 const path = require("path");

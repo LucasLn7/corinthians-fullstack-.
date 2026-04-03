@@ -71,7 +71,6 @@
   color: #ccc;
 }
 
-
 .jogos-loading {
   color: #aaa;
   font-size: 0.95rem;
@@ -125,7 +124,6 @@
   box-shadow: 0 10px 20px rgba(37, 5, 77, 0.6);
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
   .jogos-container {
     flex-direction: column;

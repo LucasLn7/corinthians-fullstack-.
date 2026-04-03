@@ -1,4 +1,4 @@
-
+// mudaraba.js - Responsável por gerenciar a navegação entre as abas da seção "Saiba Mais" e exibir a mensagem inicial.
 function trocarAba(abaId) {
     // Oculta todos os conteúdos das abas
     const conteudos = document.querySelectorAll('#saiba .conteudo');

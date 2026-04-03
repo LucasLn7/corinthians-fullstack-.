@@ -1,3 +1,4 @@
+// script.js - Responsável por interações gerais do site, como menu móvel, navegação e animações de scroll.
 $(document).ready(function() {
     $('#mobile_btn').on('click', function () {
         $('#mobile_menu').toggleClass('active');

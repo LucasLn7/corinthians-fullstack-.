@@ -1,3 +1,4 @@
+// menu.js - Responsável por gerar dinamicamente os itens do menu de navegação, tanto para desktop quanto para mobile, e destacar a página atual.
 (function () {
  
   const isSubpage = window.location.pathname.includes("/pages/");

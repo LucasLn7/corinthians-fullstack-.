@@ -1,3 +1,4 @@
+// chatbox.js - Responsável por gerenciar a funcionalidade do chatbot, incluindo a abertura/fechamento da janela de chat, envio de mensagens e exibição das respostas do bot.
 document.addEventListener("DOMContentLoaded", function () {
 
   const chatbotContainer = document.getElementById("chatbot-container");

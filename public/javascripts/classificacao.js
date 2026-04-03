@@ -1,3 +1,4 @@
+// classificacao.js - Responsável por buscar e exibir a classificação do campeonato, formatando os dados e garantindo que a interface seja responsiva e amigável.
 document.addEventListener("DOMContentLoaded", async function () {
 
   const container = document.getElementById("tabela-container");
